@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+  padding-top:44px;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.App-title {
+  display:inline-block;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+.App-header {
+  width:100%;
+  background-color: #fff;
+  height: 44px;
+  padding: 4px;
+  font-size: 21px;
+  color: #666;
+  position:fixed;
+  left:0;
+  top:0;
+}
+
+.App-row {
+  padding:20px 40px;
+}
+
+.App-row:not(:first-child) {
+  border-top: 1px solid #D4D4D4;
+}
+
+.App-row h4
+{
+  color:#666;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.App-header a {
+  padding:4px 8px 4px 8px;
+  color:#666;
+}
+
+.App-intro {
+  font-size: large;
+  color:#666;
+  margin-top:20px;
+}
+
+.App-tally {
+  font-size: 52px;
+}
+
+.App-tally:before {
+  content: "$";
+}
+
+.App-progress {
+  font-size: 12px;
+  margin: auto;
+  padding:20px 0;
+}
+
+.App-progress .progress {
+  margin-bottom: 5px;
+}
+
+.App-numbers,
+.App-add
+{
+  width:100%;
+  border-collapse: separate;
+  border-left: 0;
+  border-spacing: 0px;
+}
+
+.App-numbers tr
+.App-add tr
+{
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.App-numbers td,
+.App-add td
+{
+  padding: 10px;
+  border-left: 1px solid #C0C0C0;
+  border-top: 1px solid #C0C0C0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.App-add > tbody td {
+  border-bottom: 1px solid #C0C0C0;
+}
+
+.App-numbers td {
+  width:33%;
+  cursor: pointer;
+}
+
+.App-add > tbody:first-child tr:first-child td:first-child
+{
+  border-radius: 6px 0 0 6px;
+  width:66%;
+}
+.App-add > tbody:first-child tr:first-child td:first-child:before
+{
+  content:"$"
+}
+.App-add > tbody:first-child tr:first-child td:last-child
+{
+  border-radius: 0 6px 6px 0;
+  width:33%;
+  background-color: #4DAD4A;
+  color:#ffffff;
+  cursor: pointer;
+}
+
+.App-numbers {
+  margin-top:10px;
+}
+.App-numbers tbody:first-child tr:first-child td:first-child
+{
+  border-radius: 6px 0 0 0;
+}
+.App-numbers tbody:first-child tr:first-child td:last-child
+{
+  border-radius: 0 6px 0 0;
+}
+.App-numbers td:last-child,
+.App-add td:last-child
+{
+  border-right: 1px solid #C0C0C0;
+}
+.App-numbers tbody:last-child tr:last-child td {
+  border-bottom: 1px solid #C0C0C0;
+}
+.App-numbers tbody:last-child tr:last-child td:first-child
+{
+  border-radius: 0 0 0 6px;
+}
+.App-numbers tbody:last-child tr:last-child td:last-child
+{
+  border-radius: 0 0 6px 0;
+}
+
+.App-numbers a {
+  display:block;
+}
+
+#add,
+.btn {
+  font-weight: 200 !important;
+}
+.subtitle {
+  margin-bottom: 20px;
+  font-size:1.2em;
+}

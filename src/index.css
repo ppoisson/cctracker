@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif !important;
+}
+.page-wrap {
+  vertical-align: top;
+}
+.page {
+    float:left;
+    margin: auto;
+    padding:0px 20px;
+}
+.panel-open {
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -o-transform: translate3d(-50%, 0, 0);
+}
+.panel-close {
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
+.nav-left {
+  position:absolute;
+  top:0;
+  left:0;
+}
+.nav-right {
+  position:absolute;
+  top:0;
+  right:0;
+}
