@@ -1,5 +1,5 @@
 ## CCTracker
-CCTracker is a very simple app to keep track of a credit card charges.  It forces you to log your expenses.
+CCTracker is a very simple app to keep track of personal credit card charges.  The app is a simple charge logger.
 
 ## Features (under construction)
 * Simple user interface
