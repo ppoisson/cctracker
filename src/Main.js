@@ -126,6 +126,13 @@ class Main extends Component {
                 </tr>
               </tbody>
             </Table>
+            <Table responsive bsClass="App-add">
+              <tbody>
+                <tr>
+                  <td id="add" onClick={this.open}>ADD</td>
+                </tr>
+              </tbody>
+            </Table>
           </div>
         </div>
 

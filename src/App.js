@@ -26,6 +26,13 @@ class App extends Component {
     passw2Validation:null
   };
 
+  getInitialState = () => {
+    return JSON.parse(localStorage.getItem('cctracker') || '{}');
+  }
+  componentDidMount(){
+    this.setState(this.getInitialState);
+  }
+
   onToggleSettingsClick = () => {
     this.setState({open: !this.state.open});
   };
@@ -62,7 +69,7 @@ class App extends Component {
     // call DB check to see if user exists
     const calledemail = 't@t.com';  // this will be set from the db after login
     const calledpassw = 'tp'; // temporary until db is wired up
-
+alert(this.state.email);
     if(this.state.email === calledemail && this.state.password === calledpassw){
       this.setState({
         emailValidation:null,
@@ -139,11 +146,11 @@ class App extends Component {
       <Form onSubmit={this.signIn}>
       <FormGroup validationState={this.state.emailValidation} >
         <ControlLabel bsClass="pull-left">Email Address</ControlLabel>
-        <FormControl type="text" onChange={this.handleChange} bsSize="large" name="email" placeholder="Email Address" />
+        <FormControl type="text" onChange={this.handleChange} bsSize="large" name="email" placeholder="Email Address" value="t@t.com" defaultValue="t@t.com" />
       </FormGroup>
       <FormGroup validationState={this.state.passwValidation}>
         <ControlLabel bsClass="pull-left">Password</ControlLabel>
-        <FormControl type="password" onChange={this.handleChange}  bsSize="large" name="password" />
+        <FormControl type="password" onChange={this.handleChange}  bsSize="large" name="password" value="tp" defaultValue="tp" />
       </FormGroup>
       <Button bsSize="large" bsStyle="success" onClick={this.signIn} block>
         Sign In
@@ -180,6 +187,7 @@ class App extends Component {
   }
 
   renderMain = () => {
+    localStorage.setItem('cctracker', JSON.stringify(this.state));
     const {register, open, due, balance, ibalance} = this.state;
     const now = moment();
     let start = moment().date(due);
