@@ -13,8 +13,8 @@ class App extends Component {
     ibalance:4290.88,
     balance: 4290.88,
     due: 23,
-    email:'',
-    password:'',
+    email:'t@t.com',
+    password:'tp',
     password2:'',
     validlogin:false,
     sharing:[],
@@ -69,7 +69,6 @@ class App extends Component {
     // call DB check to see if user exists
     const calledemail = 't@t.com';  // this will be set from the db after login
     const calledpassw = 'tp'; // temporary until db is wired up
-alert(this.state.email);
     if(this.state.email === calledemail && this.state.password === calledpassw){
       this.setState({
         emailValidation:null,
