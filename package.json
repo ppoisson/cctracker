@@ -2,7 +2,7 @@
   "name": "cctracker",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://github.com/ppoisson/cctracker.git",
+  "homepage": "https://github.com/ppoisson/cctracker.git",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1",
